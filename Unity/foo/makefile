@@ -72,10 +72,8 @@ cov:
 	gcov -b foo.c
 
 run:
-	- ./$(TARGET1) -v
+	./$(TARGET1) -v
 
 clean:
 	$(CLEANUP) $(TARGET1)
 
-ci: CFLAGS += -Werror
-ci: compile
