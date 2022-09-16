@@ -16,4 +16,4 @@ jobs:
     - name: install 
       run: "sudo apt get install cppcheck"
     - name: make
-      run: "cd apps; make"
+      run: "cd foo; make"
