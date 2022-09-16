@@ -22,6 +22,6 @@ jobs:
     - name: cov
       run: "cd Unity/foo; make cov"      
     - name: valgrind
-      run: "cd apps; make valgrind"
+      run: "cd Unity/foo; make valgrind"
     - name: cppcheck
-      run: "cd apps; make cppcheck"
+      run: "cd Unity/foo; make cppcheck"
