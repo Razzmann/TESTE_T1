@@ -18,6 +18,6 @@ jobs:
     - name: make
       run: "cd Unity/foo; make"
     - name: sanitize
-      run: "make sanitize"
+      run: "cd Unity/foo; make sanitize"
     - name: cov
-      run: "make cov"      
+      run: "cd Unity/foo; make cov"      
