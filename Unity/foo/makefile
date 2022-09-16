@@ -45,6 +45,8 @@ TARGET_BASE1=all_tests
 TARGET1 = $(TARGET_BASE1)$(TARGET_EXTENSION)
 TARGET2 = $(TARGET_BASE1)$(TARGET_EXTENSION)
 TARGET3 = $(TARGET_BASE1)$(TARGET_EXTENSION)
+TARGET4 = $(TARGET_BASE1)$(TARGET_EXTENSION)
+
 SRC_FILES1=\
   $(UNITY_ROOT)/src/unity.c \
   $(UNITY_ROOT)/extras/fixture/src/unity_fixture.c \
@@ -70,6 +72,14 @@ cov:
 	$(C_COMPILER) $(CFLAGS) -fprofile-arcs -ftest-coverage $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET3)
 	./$(TARGET3) -v
 	gcov -b foo.c
+
+valgrind:
+	gcc -g -Wall -Wfatal-errors $(INC_DIRS) $(SRC_FILES1) -o $(TARGET4)
+	valgrind --leak-check=full --show-leak-kinds=all ./$(TARGET4) -v 
+	
+cppcheck: 
+	cppcheck --enable=all --suppress=missingIncludeSystem $(SRC_FILES1)
+
 
 run:
 	./$(TARGET1) -v
