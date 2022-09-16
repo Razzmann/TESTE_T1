@@ -21,9 +21,8 @@ else
 endif
 
 C_COMPILER=gcc
-ifeq ($(shell uname -s), Darwin)
-C_COMPILER=clang
-endif
+CLANG_COMPILER=clang
+
 
 UNITY_ROOT=..
 
@@ -63,7 +62,7 @@ compile:
 
 sanitize:
 	$(CLEANUP) $(TARGET2)
-	$(C_COMPILER) $(CFLAGS) -fsanitize=address $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET2)
+	$(CLANG_COMPILER) $(CFLAGS) -fsanitize=address $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET2)
 	./$(TARGET2) -v
 
 cov:
