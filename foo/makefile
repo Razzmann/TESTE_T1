@@ -41,7 +41,6 @@ CFLAGS += -Wno-unknown-pragmas
 CFLAGS += -Wstrict-prototypes
 CFLAGS += -Wundef
 CFLAGS += -Wold-style-definition
-CFLAGS += -fsanitize=address
 
 TARGET_BASE1=all_tests
 TARGET1 = $(TARGET_BASE1)$(TARGET_EXTENSION)
@@ -59,6 +58,17 @@ all: clean compile run
 
 compile:
 	$(C_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET1)
+
+sanitizer:
+	$(CLEANUP) $(TARGET2)
+	$(C_COMPILER) $(CFLAGS) -fsanitize=address $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET2)
+	./$(TARGET2) -v
+
+cov:
+	$(CLEANUP) $(TARGET3)
+	$(C_COMPILER) $(CFLAGS) -fprofile-arcs -ftest-coverage $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET3)
+	./$(TARGET3) -v
+	gcov -b foo.c
 
 run:
 	- ./$(TARGET1) -v
