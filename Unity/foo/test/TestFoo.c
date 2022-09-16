@@ -25,4 +25,3 @@ TEST(Foo, TestFoo2)
   //TEST_ASSERT_EQUAL(2, foo(1,2));
   TEST_ASSERT_EQUAL(-1, foo(2,2));
 }
-}
