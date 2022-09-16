@@ -21,3 +21,7 @@ jobs:
       run: "cd Unity/foo; make sanitize"
     - name: cov
       run: "cd Unity/foo; make cov"      
+    - name: valgrind
+      run: "cd apps; make valgrind"
+    - name: cppcheck
+      run: "cd apps; make cppcheck"
