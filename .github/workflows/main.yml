@@ -17,3 +17,7 @@ jobs:
       run: "sudo apt-get install cppcheck;sudo apt-get install valgrind"
     - name: make
       run: "cd Unity/foo; make"
+    - name: sanitize
+      run: "make sanitize"
+    - name: cov
+      run: "make cov"      
