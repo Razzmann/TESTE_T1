@@ -63,6 +63,22 @@ SRC_FILES1=\
   test/TestSort.c \
   test/test_runners/TestSort_Runner.c \
   test/test_runners/all_tests.c
+  
+  
+SRC_FILES2=\
+  $(UNITY_ROOT)/src/unity.c \
+  $(UNITY_ROOT)/extras/fixture/src/unity_fixture.c \
+  src/quick_sort.c \
+  src/merge_sort.c \
+  src/heap_sort.c \
+  src/selection_sort.c \
+  src/insertion_sort.c \
+  src/bubble_sort.c \
+  src/radix_sort.c \
+  src/counting_sort.c \
+  src/sort.c \
+  mainsort.c 
+  
 INC_DIRS=-Isrc -I$(UNITY_ROOT)/src -I$(UNITY_ROOT)/extras/fixture/src
 SYMBOLS=
 
@@ -78,7 +94,7 @@ sanitize:
 
 cov:
 	$(CLEANUP) $(TARGET3)
-	$(C_COMPILER) $(CFLAGS) -fprofile-arcs -ftest-coverage $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET3)
+	$(C_COMPILER) $(CFLAGS) -fprofile-arcs -ftest-coverage $(INC_DIRS) $(SYMBOLS) $(SRC_FILES2) -o $(TARGET3)
 	./$(TARGET3) -v
 	gcov -b mainsort.c
 
