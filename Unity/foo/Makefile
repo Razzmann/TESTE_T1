@@ -79,7 +79,7 @@ cov:
 	$(CLEANUP) $(TARGET3)
 	$(C_COMPILER) $(CFLAGS) -fprofile-arcs -ftest-coverage $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET3)
 	./$(TARGET3) -v
-	gcov -b foo.c
+	gcov -b main.c
 
 valgrind:
 	gcc -g -Wall -Wfatal-errors $(INC_DIRS) $(SRC_FILES1) -o $(TARGET4)
