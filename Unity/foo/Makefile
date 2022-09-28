@@ -59,7 +59,7 @@ SRC_FILES1=\
   src/radix_sort.c \
   src/counting_sort.c \
   src/sort.c \
-  main.c \
+  mainsort.c \
   test/TestSort.c \
   test/test_runners/TestSort_Runner.c \
   test/test_runners/all_tests.c
@@ -80,7 +80,7 @@ cov:
 	$(CLEANUP) $(TARGET3)
 	$(C_COMPILER) $(CFLAGS) -fprofile-arcs -ftest-coverage $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET3)
 	./$(TARGET3) -v
-	gcov -b main.c
+	gcov -b mainsort.c
 
 valgrind:
 	gcc -g -Wall -Wfatal-errors $(INC_DIRS) $(SRC_FILES1) -o $(TARGET4)
