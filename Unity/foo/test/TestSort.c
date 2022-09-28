@@ -3,13 +3,14 @@
 #include "unity_fixture.h"
 
 
-	int a[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-	int length = sizeof(a) / sizeof(int);
+	
 
 TEST_GROUP(Sort);
 
 TEST_SETUP(Sort)
 {
+	int a[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+	int length = sizeof(a) / sizeof(int);
 }
 
 TEST_TEAR_DOWN(Sort)
