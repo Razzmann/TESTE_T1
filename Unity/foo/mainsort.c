@@ -2,16 +2,6 @@
 #include <stdio.h>
 #include "src/sort.h"
 
-// Main Functions
-void print_array(int* a, int length){
-	int i = 0;
-	printf("[");
-	do {
-		if(i > 0) printf(", ");
-		printf("%d", a[i]);
-	} while(++i < length);
-	printf("]\n");
-}
 
 int mainsort(void)
 {
@@ -25,7 +15,7 @@ int mainsort(void)
 	printf("Status: %d\n", status);
 	
 	printf("Sorted: \n");
-	print_array(a, length);
+	
 
 	return EXIT_SUCCESS;
 }
