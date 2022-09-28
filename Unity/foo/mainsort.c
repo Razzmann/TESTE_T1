@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "src/sort.h"
 
 
@@ -11,9 +9,7 @@ int mainsort(void)
 	
 
 	int status = sort(a, length, "On2", SELECTION);
-	printf("Status: %d\n", status);
-	
-	printf("Sorted: \n");
+
 	
 
 	return EXIT_SUCCESS;
