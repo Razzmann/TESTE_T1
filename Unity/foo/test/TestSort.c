@@ -70,7 +70,7 @@ TEST(Sort, TestSort6)
 			int a[] = {-255, 8, 7, 6, 5, 4, 3, 2, 1};
 	int length = sizeof(a) / sizeof(int);
   // All of these should pass
-  TEST_ASSERT_EQUAL(0, sort(a, length, "Onlogn", SELECTION));
+  TEST_ASSERT_EQUAL(0, sort(a, length, "Onlogn", HEAP));
 
 	
 }
