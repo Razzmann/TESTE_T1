@@ -44,3 +44,13 @@ TEST(Sort, TestSort3)
 	
 	
 }
+
+TEST(Sort, TestSort4)
+{
+	int a[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+	int length = sizeof(a) / sizeof(int);
+
+ // TEST_ASSERT_EQUAL(0, sort(a, length, "On2", BUBBLE));
+	
+	
+}
