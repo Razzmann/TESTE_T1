@@ -54,3 +54,37 @@ TEST(Sort, TestSort4)
 	
 	
 }
+
+TEST(Sort, TestSort5)
+{
+	//int a[] = {-9, 8, 7, 6, 5, 4, 3, 2, 1};
+	//int length = sizeof(a) / sizeof(int);
+
+ //TEST_ASSERT_EQUAL(0, sort(a, length, "On2", BUBBLE));
+	
+	
+}
+
+TEST(Sort, TestSort6)
+{
+	//int a[] = {-9, 8, 7, 6, 5, 4, 3, 2, 1};
+	//int length = sizeof(a) / sizeof(int);
+
+ //TEST_ASSERT_EQUAL(0, sort(a, length, "On2", BUBBLE));
+	
+	
+}
+TEST(Sort, TestSort7)
+{
+	//int a[] = {-9, 8, 7, 6, 5, 4, 3, 2, 1};
+	//int length = sizeof(a) / sizeof(int);
+
+ //TEST_ASSERT_EQUAL(0, sort(a, length, "On2", BUBBLE));
+	
+	
+}
+
+
+
+
+
