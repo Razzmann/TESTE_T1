@@ -19,11 +19,11 @@ TEST_TEAR_DOWN(Sort)
 TEST(Sort, TestSort1)
 {
 	int a[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-	int b[] ={2,2,3,4,5,6,7,8,9};
+	int b[] ={1,2,3,4,5,6,7,8,9};
 	int length = sizeof(a) / sizeof(int);
 	
   TEST_ASSERT_EQUAL(0, sort(a, length, "On2", SELECTION));
-  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, 20);
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 }
 
@@ -69,6 +69,13 @@ TEST(Sort, TestSort5)
 
 TEST(Sort, TestSort6)
 {
+	int a[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+	int b[] ={1,2,3,4,5,6,7,8,9};
+	int length = sizeof(a) / sizeof(int);
+	
+  TEST_ASSERT_EQUAL(0, sort(a, length, "On2", SELECTION));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
+
 	
 
 	
