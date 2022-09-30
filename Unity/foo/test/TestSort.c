@@ -52,14 +52,14 @@ TEST(Sort, TestSort3) //TESTE DE VALOR LIMITE (ZERO)
 	
 }
 
-TEST(Sort, TestSort4) //TESTE DE VALOR LIMITE MAXIMO (ERRO)
+TEST(Sort, TestSort4) //TESTE ARRAY ULTRAPASSANDO VALOR MAXIMO
 {
-		int a[] = {INT_MAX*INT_MAX, 8, 7, 6, 5, 4, 3, 2, 1};
-	int b[] ={1,2,3,4,5,6,7,8,INT_MAX*INT_MAX};
+		int a[] = {21,20,19,18,17,16,15,14,13,12,11,10,9, 8, 7, 6, 5, 4, 3, 2, 1};
+	//int b[] ={1,2,3,4,5,6,7,8,INT_MAX*INT_MAX};
 	int length = sizeof(a) / sizeof(int);
 	
- // TEST_ASSERT_EQUAL(1, sort(a, length, "On2", SELECTION));
-  //TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
+ TEST_ASSERT_EQUAL(1, sort(a, length, "On2", SELECTION));
+ // TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 	
 	
 }
