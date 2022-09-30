@@ -16,10 +16,10 @@ TEST_TEAR_DOWN(Sort)
 {
 }
 
-TEST(Sort, TestSort1)
-{
-	int a[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-	int b[] ={1,2,3,4,5,6,7,8,9};
+TEST(Sort, TestSort1) //TESTE DE VALOR LIMITE
+{ 
+	int a[] = {INT_MAX, 8, 7, 6, 5, 4, 3, 2, 1};
+	int b[] ={1,2,3,4,5,6,7,8,INT_MAX};
 	int length = sizeof(a) / sizeof(int);
 	
   TEST_ASSERT_EQUAL(0, sort(a, length, "On2", SELECTION));
@@ -29,10 +29,13 @@ TEST(Sort, TestSort1)
 
 TEST(Sort, TestSort2)
 {
-	int a[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+	int a[] = {INT_MAX+1, 8, 7, 6, 5, 4, 3, 2, 1};
+	int b[] ={1,2,3,4,5,6,7,8,INT_MAX+1};
 	int length = sizeof(a) / sizeof(int);
-
+	
   TEST_ASSERT_EQUAL(0, sort(a, length, "On2", SELECTION));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
+
 	
 	
 }
