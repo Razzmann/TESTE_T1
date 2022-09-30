@@ -1,6 +1,6 @@
 #include "sort.h"
 
-int sort(int* a, int length, const char* type, int algorithm) {
+int sort(int* a, int length,  char* type, int algorithm) {
 	int status = 0;
     int *s = (int*)malloc(sizeof(int)*length);
 	memcpy(s,a,sizeof(int)*(length));
