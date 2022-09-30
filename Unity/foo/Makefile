@@ -94,7 +94,11 @@ cov:
 	$(CLEANUP) $(TARGET3)
 	$(C_COMPILER) $(CFLAGS) -fprofile-arcs -ftest-coverage $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET3)
 	./$(TARGET3) -v
+	gcov -b sort
 	gcov -b quick_sort
+	gcov -b selection_sort
+	
+	
 
 valgrind:
 	gcc -g -Wall -Wfatal-errors $(INC_DIRS) $(SRC_FILES1) -o $(TARGET4)
