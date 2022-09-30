@@ -23,7 +23,7 @@ TEST(Sort, TestSort1)
 	int length = sizeof(a) / sizeof(int);
 	
   TEST_ASSERT_EQUAL(0, sort(a, length, "On2", SELECTION));
-  TEST_ASSERT_EQUAL_ARRAY(b, a, 20);
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, 20);
 
 }
 
