@@ -63,19 +63,7 @@ SRC_FILES1=\
   test/test_runners/TestSort_Runner.c \
   test/test_runners/all_tests.c
   
-  
-SRC_FILES2=\
-  $(UNITY_ROOT)/src/unity.c \
-  $(UNITY_ROOT)/extras/fixture/src/unity_fixture.c \
-  src/quick_sort.c \
-  src/merge_sort.c \
-  src/heap_sort.c \
-  src/selection_sort.c \
-  src/insertion_sort.c \
-  src/bubble_sort.c \
-  src/radix_sort.c \
-  src/counting_sort.c \
-  src/sort.c 
+
   
 INC_DIRS=-Isrc -I$(UNITY_ROOT)/src -I$(UNITY_ROOT)/extras/fixture/src
 SYMBOLS=
@@ -97,6 +85,14 @@ cov:
 	gcov -b sort
 	gcov -b quick_sort
 	gcov -b selection_sort
+	gcov -b merge_sort
+	gcov -b heap_sort
+	gcov -b insertion_sort
+	gcov -b bubble_sort
+	gcov -b radix_sort
+	gcov -b counting_sort
+	
+	
 	
 	
 
