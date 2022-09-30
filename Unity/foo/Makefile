@@ -75,8 +75,7 @@ SRC_FILES2=\
   src/bubble_sort.c \
   src/radix_sort.c \
   src/counting_sort.c \
-  src/sort.c \
-  mainsort.c 
+  src/sort.c 
   
 INC_DIRS=-Isrc -I$(UNITY_ROOT)/src -I$(UNITY_ROOT)/extras/fixture/src
 SYMBOLS=
@@ -95,7 +94,7 @@ cov:
 	$(CLEANUP) $(TARGET3)
 	$(C_COMPILER) $(CFLAGS) -fprofile-arcs -ftest-coverage $(INC_DIRS) $(SYMBOLS) $(SRC_FILES2) -o $(TARGET3)
 	./$(TARGET3) -v
-	gcov -b mainsort.c
+	gcov -b src/quick_sort.c
 
 valgrind:
 	gcc -g -Wall -Wfatal-errors $(INC_DIRS) $(SRC_FILES1) -o $(TARGET4)
