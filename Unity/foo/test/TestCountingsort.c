@@ -80,7 +80,7 @@ TEST(Counting_sort, TestSort5)
 {
 	
 	int a[] = {-255, 8, 7, 6, 5, 4, 3, 2, 1};
-	int b[] ={-255,0,2,3,4,5,6,7,8};
+	int b[] ={-255,1,2,3,4,5,6,7,8};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On";
   // All of these should pass
