@@ -139,12 +139,12 @@ TEST(Selection_sort, TestSort10)//TESTE ARRAY ZERADO
 
 
 
-TEST(Selection_sort, TestSort11)//TESTE ARRAY NÃO INICIADO
+TEST(Selection_sort, TestSort11)//TESTE ARRAY PASSANDO TAMANHO NEGATIVO
 {
-	int a[];
+	int a[] = {123,125}
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
-	TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+	TEST_ASSERT_EQUAL(1, sort(a, -length, complex, SELECTION));
 }
 TEST(Selection_sort, TestSort12)//TESTE PASSADNO MÁXIMO
 {
