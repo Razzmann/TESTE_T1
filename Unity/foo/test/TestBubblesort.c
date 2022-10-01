@@ -23,7 +23,7 @@ TEST(Bubble_sort, TestSort1) //TESTE DE VALOR LIMITE MAXIMO
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
 	
-  TEST_ASSERT_EQUAL(0, Bubble_sort(a, length, complex, BUBBLE));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, BUBBLE));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 }
@@ -35,7 +35,7 @@ TEST(Bubble_sort, TestSort2) //TESTE DE VALOR LIMITE MINIMO
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
 	
-  TEST_ASSERT_EQUAL(0, Bubble_sort(a, length, complex, BUBBLE));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, BUBBLE));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 	
@@ -49,7 +49,7 @@ TEST(Bubble_sort, TestSort3) //TESTE DE VALOR LIMITE (ZERO)
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
 	
-  TEST_ASSERT_EQUAL(0, Bubble_sort(a, length, complex, BUBBLE));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, BUBBLE));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 	
 	
@@ -63,7 +63,7 @@ TEST(Bubble_sort, TestSort4) //TESTE ARRAY ULTRAPASSANDO VALOR MAXIMO
 	char complex[]="On2";
 	
 	
- TEST_ASSERT_EQUAL(1, Bubble_sort(a, length, complex, BUBBLE));
+ TEST_ASSERT_EQUAL(1, sort(a, length, complex, BUBBLE));
  // TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 	
 	
@@ -75,7 +75,7 @@ TEST(Bubble_sort, TestSort5)
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
   // All of these should pass
-  TEST_ASSERT_EQUAL(0, Bubble_sort(a, length, complex, BUBBLE));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, BUBBLE));
 	
 	
 }
@@ -87,7 +87,7 @@ TEST(Bubble_sort, TestSort6)
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
 	
-  TEST_ASSERT_EQUAL(0, Bubble_sort(a, length, complex, BUBBLE));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, BUBBLE));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 	
@@ -100,7 +100,7 @@ TEST(Bubble_sort, TestSort7)
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
   // All of these should pass
-  TEST_ASSERT_EQUAL(0, Bubble_sort(a, length, complex, BUBBLE));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, BUBBLE));
 	
 	
 }
