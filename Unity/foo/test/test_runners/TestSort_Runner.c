@@ -102,3 +102,17 @@ TEST_GROUP_RUNNER(Heap_sort)
   RUN_TEST_CASE(Heap_sort, TestSort9);
   RUN_TEST_CASE(Heap_sort, TestSort10);
 }
+
+TEST_GROUP_RUNNER(Quick_sort)
+{
+  RUN_TEST_CASE(Quick_sort, TestSort1);
+  RUN_TEST_CASE(Quick_sort, TestSort2);
+  RUN_TEST_CASE(Quick_sort, TestSort3);
+  RUN_TEST_CASE(Quick_sort, TestSort4);
+  RUN_TEST_CASE(Quick_sort, TestSort5);
+  RUN_TEST_CASE(Quick_sort, TestSort6);
+  RUN_TEST_CASE(Quick_sort, TestSort7);
+  RUN_TEST_CASE(Quick_sort, TestSort8);
+  RUN_TEST_CASE(Quick_sort, TestSort9);
+  RUN_TEST_CASE(Quick_sort, TestSort10);
+}
