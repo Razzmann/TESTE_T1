@@ -137,9 +137,9 @@ TEST(Selection_sort, TestSort10)//TESTE ARRAY ZERADO
 
 
 
-TEST(Selection_sort, TestSort11)//TESTE ARRAY PASSANDO TAMANHO NEGATIVO
+TEST(Selection_sort, TestSort11)//TESTE ARRAY PASSANDO METADE 11
 {
-	int a[] = {123,125};
+	int a[] = {123,0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
 	TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
@@ -171,7 +171,7 @@ TEST(Selection_sort, TestSort14)//TESTE COMPLEXIDADE ERRADA
 	char complex[]="On";
 	
 	
-// TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+ TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
 
 }
 TEST(Selection_sort, TestSort15)//TESTE COMPLEXIDADE ERRADA
@@ -181,7 +181,7 @@ TEST(Selection_sort, TestSort15)//TESTE COMPLEXIDADE ERRADA
 	char complex[]="Onlogn";
 	
 	
-// TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+ TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
 
 }
 TEST(Selection_sort, TestSort16){}
