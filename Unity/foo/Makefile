@@ -64,6 +64,8 @@ SRC_FILES1=\
   test/TestRadixsort.c\
   test/TestCountingsort.c\
   test/TestInsertionsort.c\
+  test/TestHeapsort.c\
+  test/TestMergesort.c\
   test/test_runners/TestSort_Runner.c \
   test/test_runners/all_tests.c
   
