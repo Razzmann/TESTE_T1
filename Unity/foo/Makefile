@@ -61,6 +61,7 @@ SRC_FILES1=\
   src/sort.c \
   test/TestSort.c \
   test/TestBubblesort.c\
+  test/TestRadixsort.c\
   test/TestCountingsort.c\
   test/TestInsertionsort.c\
   test/test_runners/TestSort_Runner.c \
