@@ -139,7 +139,45 @@ TEST(Selection_sort, TestSort10)//TESTE ARRAY ZERADO
 
 
 
+TEST(Selection_sort, TestSort11)//TESTE ARRAY NÃO INICIADO
+{
+	int a[];
+	int length = sizeof(a) / sizeof(int);
+	char complex[]="On2";
+	TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+}
+TEST(Selection_sort, TestSort12)//TESTE PASSADNO MÁXIMO
+{
+	int a[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+	int length = sizeof(a) / sizeof(int);
+	char complex[]="On2";
+	
+	
+ TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+}
+TEST(Selection_sort, TestSort13)//TESTE PASSADNO MÍNIMO
+{
+	int a[] = {1,2};
+	int length = sizeof(a) / sizeof(int);
+	char complex[]="On2";
+	
+	
+ TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+}
 
+TEST(Selection_sort, TestSort14)
+{
+
+}
+TEST(Selection_sort, TestSort15)
+{
+
+}
+TEST(Selection_sort, TestSort16){}
+TEST(Selection_sort, TestSort17){}
+TEST(Selection_sort, TestSort18){}
+TEST(Selection_sort, TestSort19){}
+TEST(Selection_sort, TestSort20){}
 
 
 
