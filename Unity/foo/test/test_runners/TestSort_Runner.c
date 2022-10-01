@@ -30,3 +30,18 @@ TEST_GROUP_RUNNER(Bubble_sort)
   RUN_TEST_CASE(Bubble_sort, TestSort10);
 }
 
+
+TEST_GROUP_RUNNER(Insertion_sort)
+{
+  RUN_TEST_CASE(Insertion_sort, TestSort1);
+  RUN_TEST_CASE(Insertion_sort, TestSort2);
+  RUN_TEST_CASE(Insertion_sort, TestSort3);
+  RUN_TEST_CASE(Insertion_sort, TestSort4);
+  RUN_TEST_CASE(Insertion_sort, TestSort5);
+  RUN_TEST_CASE(Insertion_sort, TestSort6);
+  RUN_TEST_CASE(Insertion_sort, TestSort7);
+  RUN_TEST_CASE(Insertion_sort, TestSort8);
+  RUN_TEST_CASE(Insertion_sort, TestSort9);
+  RUN_TEST_CASE(Insertion_sort, TestSort10);
+}
+
