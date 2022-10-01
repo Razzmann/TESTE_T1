@@ -142,7 +142,7 @@ TEST(Selection_sort, TestSort11)//TESTE ARRAY PASSANDO METADE 11
 	int a[] = {123,0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
-	TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+	TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
 }
 TEST(Selection_sort, TestSort12)//TESTE PASSANDO MÁXIMO
 {
