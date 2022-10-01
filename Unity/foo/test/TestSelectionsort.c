@@ -142,7 +142,7 @@ TEST(Selection_sort, TestSort11)//TESTE ARRAY PASSANDO TAMANHO NEGATIVO
 	int a[] = {123,125};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
-	TEST_ASSERT_EQUAL(1, sort(a, -length, complex, SELECTION));
+	TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
 }
 TEST(Selection_sort, TestSort12)//TESTE PASSANDO MÁXIMO
 {
@@ -153,7 +153,7 @@ TEST(Selection_sort, TestSort12)//TESTE PASSANDO MÁXIMO
 	
  TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
 }
-/*
+
 TEST(Selection_sort, TestSort13)//TESTE PASSANDO MÍNIMO
 {
 	int a[] = {1,2};
@@ -191,4 +191,4 @@ TEST(Selection_sort, TestSort19){}
 TEST(Selection_sort, TestSort20){}
 
 
-*/
+
