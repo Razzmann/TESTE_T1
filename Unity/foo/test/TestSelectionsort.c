@@ -69,7 +69,7 @@ TEST(Selection_sort, TestSort4) //TESTE ARRAY ULTRAPASSANDO VALOR MAXIMO
 	
 }
 
-TEST(Selection_sort, TestSort5)
+TEST(Selection_sort, TestSort5)//TESTE DE VALOR LIMITE metade de min e max
 {
 	int a[] = {INT_MAX/2, 8, 7, 6, 5, 4, 3, 2, INT_MIN/2};
 	int b[] ={INT_MIN/2,2,3,4,5,6,7,8,INT_MAX/2};
@@ -81,10 +81,10 @@ TEST(Selection_sort, TestSort5)
 	
 }
 
-TEST(Selection_sort, TestSort6)
+TEST(Selection_sort, TestSort6)//TESTE DE VALORES JÁ ORDENADOS
 {
-	int a[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-	int b[] ={1,2,3,4,5,6,7,8,9};
+	int a[] = {-767, 125, 345 , 367, 421, 5743, 6612, 7012, 8999,9999 , 1000, 1112, 1228,91023,123507,1681223};
+	int b[] = {-767, 125, 345 , 367, 421, 5743, 6612, 7012, 8999,9999 , 1000, 1112, 1228,91023,123507,1681223};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
 	
@@ -95,13 +95,15 @@ TEST(Selection_sort, TestSort6)
 
 	
 }
-TEST(Selection_sort, TestSort7)
+TEST(Selection_sort, TestSort7)//TESTE DE VALORES IGUAIS
 {
-	int a[] = {-255, 8, 7, 6, 5, 4, 3, 2, 1};
+	int a[] = {92458, 92458, 92458 , 92458, 92458, 92458, 92458, 92458, 92458,92458 , 92458, 92458, 92458,92458,92458,92458};
+	int b[] = {92458, 92458, 92458 , 92458, 92458, 92458, 92458, 92458, 92458,92458 , 92458, 92458, 92458,92458,92458,92458};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
-  // All of these should pass
+	
   TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 	
 	
 }
