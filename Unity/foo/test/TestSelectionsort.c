@@ -153,6 +153,7 @@ TEST(Selection_sort, TestSort12)//TESTE PASSANDO MÁXIMO
 	
  TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
 }
+/*
 TEST(Selection_sort, TestSort13)//TESTE PASSANDO MÍNIMO
 {
 	int a[] = {1,2};
@@ -165,10 +166,22 @@ TEST(Selection_sort, TestSort13)//TESTE PASSANDO MÍNIMO
 
 TEST(Selection_sort, TestSort14)//TESTE COMPLEXIDADE ERRADA
 {
+	int a[] = {-176234,561,1112,-5671,85124,5819};
+	int length = sizeof(a) / sizeof(int);
+	char complex[]="On";
+	
+	
+// TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
 
 }
 TEST(Selection_sort, TestSort15)//TESTE COMPLEXIDADE ERRADA
 {
+	int a[] = {-176234,561,1112,-5671,85124,5819};
+	int length = sizeof(a) / sizeof(int);
+	char complex[]="Onlogn";
+	
+	
+// TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
 
 }
 TEST(Selection_sort, TestSort16){}
@@ -178,4 +191,4 @@ TEST(Selection_sort, TestSort19){}
 TEST(Selection_sort, TestSort20){}
 
 
-
+*/
