@@ -1,18 +1,18 @@
 #include "unity.h"
 #include "unity_fixture.h"
 
-TEST_GROUP_RUNNER(Sort)
+TEST_GROUP_RUNNER(Selection_sort)
 {
-  RUN_TEST_CASE(Sort, TestSort1);
-  RUN_TEST_CASE(Sort, TestSort2);
-  RUN_TEST_CASE(Sort, TestSort3);
-  RUN_TEST_CASE(Sort, TestSort4);
-  RUN_TEST_CASE(Sort, TestSort5);
-  RUN_TEST_CASE(Sort, TestSort6);
-  RUN_TEST_CASE(Sort, TestSort7);
-  RUN_TEST_CASE(Sort, TestSort8);
-  RUN_TEST_CASE(Sort, TestSort9);
-  RUN_TEST_CASE(Sort, TestSort10);
+  RUN_TEST_CASE(Selection_sort, TestSort1);
+  RUN_TEST_CASE(Selection_sort, TestSort2);
+  RUN_TEST_CASE(Selection_sort, TestSort3);
+  RUN_TEST_CASE(Selection_sort, TestSort4);
+  RUN_TEST_CASE(Selection_sort, TestSort5);
+  RUN_TEST_CASE(Selection_sort, TestSort6);
+  RUN_TEST_CASE(Selection_sort, TestSort7);
+  RUN_TEST_CASE(Selection_sort, TestSort8);
+  RUN_TEST_CASE(Selection_sort, TestSort9);
+  RUN_TEST_CASE(Selection_sort, TestSort10);
 }
 
 
