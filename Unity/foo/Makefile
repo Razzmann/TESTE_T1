@@ -60,7 +60,7 @@ SRC_FILES1=\
   src/counting_sort.c \
   src/sort.c \
   test/test_runners/TestSort_Runner.c \
-  test/TestBubblesort.c \
+ # test/TestBubblesort.c \
   test/test_runners/all_tests.c
   
 
