@@ -13,6 +13,16 @@ TEST_GROUP_RUNNER(Selection_sort)
   RUN_TEST_CASE(Selection_sort, TestSort8);
   RUN_TEST_CASE(Selection_sort, TestSort9);
   RUN_TEST_CASE(Selection_sort, TestSort10);
+  RUN_TEST_CASE(Selection_sort, TestSort11);
+  RUN_TEST_CASE(Selection_sort, TestSort12);
+  RUN_TEST_CASE(Selection_sort, TestSort13);
+  RUN_TEST_CASE(Selection_sort, TestSort14);
+  RUN_TEST_CASE(Selection_sort, TestSort15);
+  RUN_TEST_CASE(Selection_sort, TestSort16);
+  RUN_TEST_CASE(Selection_sort, TestSort17);
+  RUN_TEST_CASE(Selection_sort, TestSort18);
+  RUN_TEST_CASE(Selection_sort, TestSort19);
+  RUN_TEST_CASE(Selection_sort, TestSort20);
 }
 
 
