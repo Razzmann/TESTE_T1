@@ -115,9 +115,7 @@ TEST(Selection_sort, TestSort8)//TESTE ARRAY OVERFLOW
 	char complex[]="On2";
 	
 	
- TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
-	
-	
+ TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));		
 	
 }
 TEST(Selection_sort, TestSort9)//TESTE ARRAY UNDERFLOW
@@ -141,7 +139,7 @@ TEST(Selection_sort, TestSort10)//TESTE ARRAY ZERADO
 
 TEST(Selection_sort, TestSort11)//TESTE ARRAY PASSANDO TAMANHO NEGATIVO
 {
-	int a[] = {123,125}
+	int a[] = {123,125};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On2";
 	TEST_ASSERT_EQUAL(1, sort(a, -length, complex, SELECTION));
