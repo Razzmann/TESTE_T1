@@ -14,7 +14,7 @@ TEST_GROUP_RUNNER(Sort)
   RUN_TEST_CASE(Sort, TestSort9);
   RUN_TEST_CASE(Sort, TestSort10);
 }
-
+/*
 
 TEST_GROUP_RUNNER(Bubble_sort)
 {
@@ -29,3 +29,4 @@ TEST_GROUP_RUNNER(Bubble_sort)
   RUN_TEST_CASE(Bubble_sort, TestSort9);
   RUN_TEST_CASE(Bubble_sort, TestSort10);
 }
+*/
