@@ -18,6 +18,16 @@ TEST_TEAR_DOWN(Counting_sort)
 
 TEST(Counting_sort, TestSort1) //TESTE DE VALOR LIMITE MAXIMO
 { 
+	int a[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+	int b[] ={1,2,3,4,5,6,7,8,9};
+	int length = sizeof(a) / sizeof(int);
+	char complex[]="On";
+	
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, COUNTING));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
+	
+	
+	
 
 
 }
