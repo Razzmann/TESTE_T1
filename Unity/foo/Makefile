@@ -59,7 +59,7 @@ SRC_FILES1=\
   src/radix_sort.c \
   src/counting_sort.c \
   src/sort.c \
-  test/TestSort.c \
+  test/TestSelectionsort.c \
   test/TestBubblesort.c\
   test/TestRadixsort.c\
   test/TestCountingsort.c\
