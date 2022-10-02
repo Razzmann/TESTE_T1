@@ -133,7 +133,7 @@ TEST(Counting_sort, TestSort8)//TESTE ARRAY OVERFLOW
 }
 TEST(Counting_sort, TestSort9)//TESTE ARRAY UNDERFLOW
 {
-	/*
+	
 
 	int a[] = {211};
 	int length = sizeof(a) / sizeof(int);
@@ -141,16 +141,16 @@ TEST(Counting_sort, TestSort9)//TESTE ARRAY UNDERFLOW
 	
 	
  TEST_ASSERT_EQUAL(1, sort(a, length, complex, COUNTING));
-*/
+
 }
 TEST(Counting_sort, TestSort10)//TESTE ARRAY ZERADO
 {
-/*
+
 	int a[] = {};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On";
 	 TEST_ASSERT_EQUAL(1, sort(a, length, complex, COUNTING));
-*/	
+	
 }
 
 
