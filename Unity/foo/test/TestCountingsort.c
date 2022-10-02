@@ -144,12 +144,12 @@ TEST(Counting_sort, TestSort9)//TESTE ARRAY UNDERFLOW
 }
 TEST(Counting_sort, TestSort10)//TESTE ARRAY ZERADO
 {
-/*
+
 	int a[] = {};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On";
 	 TEST_ASSERT_EQUAL(1, sort(a, length, complex, COUNTING));
-	*/ 
+	
 }
 
 
@@ -224,14 +224,14 @@ TEST(Counting_sort, TestSort16)//TESTE COMPLEXIDADE ERRADA
 }
 TEST(Counting_sort, TestSort17)//TESTE COMPLEXIDADE ERRADA
 {
-	/*
+	
 	int a[] = {-176234,561,1112,-5671,85124,5819};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="%@!&*)!$_!@$*";
 	
 	
  TEST_ASSERT_EQUAL(1, sort(a, length, complex, COUNTING));
-	*/
+	
 }
 
 TEST(Counting_sort, TestSort18)//TESTE CASE SENSITIVE
