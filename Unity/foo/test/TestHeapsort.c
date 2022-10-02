@@ -23,7 +23,7 @@ TEST(Heap_sort, TestSort1) //TESTE DE VALOR LIMITE MAXIMO
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="Onlogn";
 	
-  TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 }
@@ -35,7 +35,7 @@ TEST(Heap_sort, TestSort2) //TESTE DE VALOR LIMITE MINIMO
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="Onlogn";
 	
-  TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 	
@@ -49,7 +49,7 @@ TEST(Heap_sort, TestSort3) //TESTE DE VALOR LIMITE (ZERO)
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="Onlogn";
 	
-  TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 	
 	
@@ -63,7 +63,7 @@ TEST(Heap_sort, TestSort4) //TESTE DE VALORES REPETIDOS E EM ORDEM
 	char complex[]="Onlogn";
 	
 	
- TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+ TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);	
 	
 	
@@ -76,7 +76,7 @@ TEST(Heap_sort, TestSort5)//TESTE DE VALOR LIMITE metade de min e max
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="Onlogn";
 	
-  TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 	
 }
@@ -88,7 +88,7 @@ TEST(Heap_sort, TestSort6)//TESTE DE VALORES JÁ ORDENADOS
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="Onlogn";
 	
-  TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 	
@@ -102,7 +102,7 @@ TEST(Heap_sort, TestSort7)//TESTE DE VALORES IGUAIS
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="Onlogn";
 	
-  TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 	
 	
@@ -115,7 +115,7 @@ TEST(Heap_sort, TestSort8)//TESTE ARRAY OVERFLOW
 	char complex[]="Onlogn";
 	
 	
- TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));		
+ TEST_ASSERT_EQUAL(1, sort(a, length, complex, HEAP));		
 	
 }
 TEST(Heap_sort, TestSort9)//TESTE ARRAY UNDERFLOW
@@ -125,14 +125,14 @@ TEST(Heap_sort, TestSort9)//TESTE ARRAY UNDERFLOW
 	char complex[]="Onlogn";
 	
 	
- TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+ TEST_ASSERT_EQUAL(1, sort(a, length, complex, HEAP));
 }
 TEST(Heap_sort, TestSort10)//TESTE ARRAY ZERADO
 {
 	int a[] = {};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="Onlogn";
-	 TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+	 TEST_ASSERT_EQUAL(1, sort(a, length, complex, HEAP));
 }
 
 
@@ -142,7 +142,7 @@ TEST(Heap_sort, TestSort11)//TESTE ARRAY PASSANDO METADE 11
 	int a[] = {123,0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="Onlogn";
-	TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+	TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
 }
 TEST(Heap_sort, TestSort12)//TESTE PASSANDO MÁXIMO
 {
@@ -151,7 +151,7 @@ TEST(Heap_sort, TestSort12)//TESTE PASSANDO MÁXIMO
 	char complex[]="Onlogn";
 	
 	
- TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+ TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
 }
 
 TEST(Heap_sort, TestSort13)//TESTE PASSANDO MÍNIMO
@@ -161,7 +161,7 @@ TEST(Heap_sort, TestSort13)//TESTE PASSANDO MÍNIMO
 	char complex[]="Onlogn";
 	
 	
- TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+ TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
 }
 
 TEST(Heap_sort, TestSort14)//TESTE COMPLEXIDADE ERRADA
@@ -171,7 +171,7 @@ TEST(Heap_sort, TestSort14)//TESTE COMPLEXIDADE ERRADA
 	char complex[]="Onlogn";
 	
 	
- TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+ TEST_ASSERT_EQUAL(1, sort(a, length, complex, HEAP));
 
 }
 TEST(Heap_sort, TestSort15)//TESTE COMPLEXIDADE ERRADA
@@ -181,7 +181,7 @@ TEST(Heap_sort, TestSort15)//TESTE COMPLEXIDADE ERRADA
 	char complex[]="On2";
 	
 	
- TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+ TEST_ASSERT_EQUAL(1, sort(a, length, complex, HEAP));
 
 }
 TEST(Heap_sort, TestSort16)//TESTE COMPLEXIDADE ERRADA
@@ -191,7 +191,7 @@ TEST(Heap_sort, TestSort16)//TESTE COMPLEXIDADE ERRADA
 	char complex[]="";
 	
 	
- TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+ TEST_ASSERT_EQUAL(1, sort(a, length, complex, HEAP));
 }
 TEST(Heap_sort, TestSort17)//TESTE COMPLEXIDADE ERRADA
 {
@@ -200,7 +200,7 @@ TEST(Heap_sort, TestSort17)//TESTE COMPLEXIDADE ERRADA
 	char complex[]="%@!&*)!$_!@$*";
 	
 	
- TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+ TEST_ASSERT_EQUAL(1, sort(a, length, complex, HEAP));
 }
 
 TEST(Heap_sort, TestSort18)//TESTE CASE SENSITIVE
@@ -210,7 +210,7 @@ TEST(Heap_sort, TestSort18)//TESTE CASE SENSITIVE
 	char complex[]="oNLOGN";
 	
 	
- TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+ TEST_ASSERT_EQUAL(1, sort(a, length, complex, HEAP));
 }
 
 
