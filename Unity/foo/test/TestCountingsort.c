@@ -177,14 +177,14 @@ TEST(Counting_sort, TestSort12)//TESTE ARRAY PASSANDO MÁXIMO
 
 TEST(Counting_sort, TestSort13)//TESTE PASSANDO MÍNIMO
 {
-	
+/*	
 	int a[] = {1,2};
 	int length = sizeof(a) / sizeof(int);
 	
 	char complex[]="On";
 		
  TEST_ASSERT_EQUAL(0, sort(a, length, complex, COUNTING));
- 
+ */
 }
 
 TEST(Counting_sort, TestSort14)//TESTE COMPLEXIDADE ERRADA
