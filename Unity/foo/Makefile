@@ -77,14 +77,15 @@ SYMBOLS=
 
 all: clean compile run
 
-sanitize:
-	$(CLEANUP) $(TARGET2)
-	$(CLANG_COMPILER) $(CFLAGS) -fsanitize=address $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET2)
-	./$(TARGET2) -v
-
 
 compile:
 	$(C_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET1)
+	
+
+sanitize:
+	$(CLEANUP) $(TARGET2)
+	$(CLANG_COMPILER) $(CFLAGS) -fsanitize=address $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET2)
+	./$(TARGET2) -v	
 
 
 cov:
