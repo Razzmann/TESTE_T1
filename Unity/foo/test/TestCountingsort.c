@@ -24,7 +24,7 @@ TEST(Counting_sort, TestSort1) //TESTE DE VALOR LIMITE MAXIMO
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On";
 	
-  // TEST_ASSERT_EQUAL(0, sort(a, length, complex, COUNTING));
+   TEST_ASSERT_EQUAL(0, sort(a, length, complex, COUNTING));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
   
 
