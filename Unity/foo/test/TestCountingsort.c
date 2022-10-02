@@ -91,7 +91,7 @@ TEST(Counting_sort, TestSort5)//TESTE DE VALOR LIMITE metade de min e max
 	*/
 }
 
-TEST(Counting_sort, TestSort6)//TESTE DE VALORES JÁ ORDENADOS.  -- FALHA! (FAIL: Element 1 Expected 125 Was 345)
+TEST(Counting_sort, TestSort6)//TESTE DE VALORES JÁ ORDENADOS.  -- FALHA! (FAIL: Element 1 Expected 125 Was 345) PROBLEMA QUANDO HÁ NÚMEROS NEGATIVOS
 {
 
 	//int a[] = {-767, 125, 345 , 367, 421, 5743, 6612, 7012, 8999,9999 , 10000, 11142, 12928,91023,123507,1681223};
