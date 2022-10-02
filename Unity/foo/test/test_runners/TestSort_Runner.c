@@ -25,7 +25,7 @@ TEST_GROUP_RUNNER(Selection_sort)
   RUN_TEST_CASE(Selection_sort, TestSort20);
 }
 
-/*
+
 TEST_GROUP_RUNNER(Bubble_sort)
 {
   RUN_TEST_CASE(Bubble_sort, TestSort1);
@@ -196,4 +196,4 @@ TEST_GROUP_RUNNER(Quick_sort)
   RUN_TEST_CASE(Quick_sort, TestSort19);
   RUN_TEST_CASE(Quick_sort, TestSort20);
 }
-*/
+
