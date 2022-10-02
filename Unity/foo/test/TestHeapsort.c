@@ -243,7 +243,7 @@ TEST(Heap_sort, TestSort18)//TESTE CASE SENSITIVE
 	
 	int a[] = {-176234,561,1112,-5671,85124,5819};
 	int length = sizeof(a) / sizeof(int);
-	char complex[]="Onlogn";
+	char complex[]="onlogn";
 	
 	
  TEST_ASSERT_EQUAL(1, sort(a, length, complex, HEAP));
