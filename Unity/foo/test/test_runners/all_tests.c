@@ -10,7 +10,7 @@ static void RunAllTests(void)
   
   //RUN_TEST_GROUP(Counting_sort);
   
- RUN_TEST_GROUP(Radix_sort);
+ //RUN_TEST_GROUP(Radix_sort);
   //RUN_TEST_GROUP(Merge_sort);
   
   //RUN_TEST_GROUP(Heap_sort);
