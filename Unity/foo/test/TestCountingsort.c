@@ -107,7 +107,7 @@ TEST(Counting_sort, TestSort6)//TESTE DE VALORES JÁ ORDENADOS
 }
 TEST(Counting_sort, TestSort7)//TESTE DE VALORES IGUAIS
 {
-/*
+
 	int a[] = {92458, 92458, 92458 , 92458, 92458, 92458, 92458, 92458, 92458,92458 , 92458, 92458, 92458,92458,92458,92458};
 	int b[] = {92458, 92458, 92458 , 92458, 92458, 92458, 92458, 92458, 92458,92458 , 92458, 92458, 92458,92458,92458,92458};
 	int length = sizeof(a) / sizeof(int);
@@ -116,7 +116,7 @@ TEST(Counting_sort, TestSort7)//TESTE DE VALORES IGUAIS
   TEST_ASSERT_EQUAL(0, sort(a, length, complex, COUNTING));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 	
-	*/
+	
 }
 
 TEST(Counting_sort, TestSort8)//TESTE ARRAY OVERFLOW
