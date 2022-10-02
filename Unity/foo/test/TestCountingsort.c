@@ -121,26 +121,26 @@ TEST(Counting_sort, TestSort7)//TESTE DE VALORES IGUAIS
 
 TEST(Counting_sort, TestSort8)//TESTE ARRAY OVERFLOW
 {
-/*
+
 	int a[] = {21,20,19,18,17,16,15,14,13,12,11,10,9, 8, 7, 6, 5, 4, 3, 2, 1};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On";
 	
 	
  TEST_ASSERT_EQUAL(1, sort(a, length, complex, COUNTING));
- */
+ 
 	
 }
 TEST(Counting_sort, TestSort9)//TESTE ARRAY UNDERFLOW
 {
-/*
+
 	int a[] = {211};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On";
 	
 	
  TEST_ASSERT_EQUAL(1, sort(a, length, complex, COUNTING));
- */
+ 
 }
 TEST(Counting_sort, TestSort10)//TESTE ARRAY ZERADO
 {
@@ -163,40 +163,40 @@ TEST(Counting_sort, TestSort11)//TESTE ARRAY PASSANDO METADE 11
 	TEST_ASSERT_EQUAL(0, sort(a, length, complex, COUNTING));
 	*/
 }
-TEST(Counting_sort, TestSort12)//TESTE PASSANDO MÁXIMO
+TEST(Counting_sort, TestSort12)//TESTE ARRAY PASSANDO MÁXIMO
 {
-	/*
+	
 	int a[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On";
 	
 	
  TEST_ASSERT_EQUAL(0, sort(a, length, complex, COUNTING));
-	*/
+	
 }
 
 TEST(Counting_sort, TestSort13)//TESTE PASSANDO MÍNIMO
 {
-	/*
+	
 	int a[] = {1,2};
 	int length = sizeof(a) / sizeof(int);
 	
 	char complex[]="On";
 		
  TEST_ASSERT_EQUAL(0, sort(a, length, complex, COUNTING));
- */
+ 
 }
 
 TEST(Counting_sort, TestSort14)//TESTE COMPLEXIDADE ERRADA
 {
-	/*
+	
 	int a[] = {-176234,561,1112,-5671,85124,5819};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="oNLOGN";
 	
 	
  TEST_ASSERT_EQUAL(1, sort(a, length, complex, COUNTING));
-	*/
+	
 
 }
 TEST(Counting_sort, TestSort15)//TESTE COMPLEXIDADE ERRADA
