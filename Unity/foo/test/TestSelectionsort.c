@@ -137,7 +137,7 @@ TEST(Selection_sort, TestSort10)//TESTE ARRAY ZERADO
 
 
 
-TEST(Selection_sort, TestSort11)//TESTE ARRAY PASSANDO METADE 10 ELEMENTOS
+TEST(Selection_sort, TestSort11)//TESTE ARRAY PASSANDO METADE 10 ELEMENTOS  -- Corrigir nos outros testes 
 {
 	int a[] = {0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
 	int b[] = {-1246423, -128743, -19,0,134,1324,7463,7542,12512,67213};
@@ -220,7 +220,14 @@ TEST(Selection_sort, TestSort18)
 	
  TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
 }
-TEST(Selection_sort, TestSort19){}
+TEST(Selection_sort, TestSort19){
+	
+	int a[] = {-176234,561,1112,-5671,85124,5819};
+	int length = sizeof(a) / sizeof(int);
+	char complex[]="on2";
+
+
+}
 TEST(Selection_sort, TestSort20){}
 
 
