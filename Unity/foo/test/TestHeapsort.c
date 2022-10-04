@@ -90,7 +90,7 @@ TEST(Heap_sort, TestSort5)//TESTE DE VALOR LIMITE metade de min e max
 	
 }
 
-TEST(Heap_sort, TestSort6)//TESTE DE VALORES JÁ ORDENADOS.  -- FALHA! (FAIL: Element 1 Expected 125 Was 345)
+TEST(Heap_sort, TestSort6)//TESTE DE VALORES JÁ ORDENADOS.
 {
 
 	int a[] = {-767, 125, 345 , 367, 421, 5743, 6612, 7012, 8999,9999 , 10000, 11142, 12928,91023,123507,1681223};
@@ -156,7 +156,7 @@ TEST(Heap_sort, TestSort10)//TESTE ARRAY ZERADO
 
 
 
-TEST(Heap_sort, TestSort11)//TESTE ARRAY PASSANDO METADE 11
+TEST(Heap_sort, TestSort11)//TESTE ARRAY PASSANDO METADE 10
 {
 
 	
@@ -172,23 +172,26 @@ TEST(Heap_sort, TestSort12)//TESTE ARRAY PASSANDO MÁXIMO
 {
 	
 	int a[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+	int b[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="Onlogn";
 	
 	
  TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
+ TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 	
 }
 
 TEST(Heap_sort, TestSort13)//TESTE PASSANDO MÍNIMO
 {
 	
-	int a[] = {1,2};
+	int a[] = {2,1};
+	int b[] = {1,2};
 	int length = sizeof(a) / sizeof(int);
-	
 	char complex[]="Onlogn";
 		
- TEST_ASSERT_EQUAL(0, sort(a, length, complex, HEAP));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 }
 
