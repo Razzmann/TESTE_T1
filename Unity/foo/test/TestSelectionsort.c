@@ -230,11 +230,6 @@ TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
 }
 TEST(Selection_sort, TestSort20){  //teste para cobertura do codigo
 
-	int a[] = {-176234,561,1112,-5671,85124,5819};
-	int length = sizeof(a) / sizeof(int);
-	char complex[]="OXXXXX2";
-	
-	TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
 
 }
 
