@@ -260,13 +260,7 @@ TEST(Radix_sort, TestSort18)//TESTE CASE SENSITIVE
 TEST(Radix_sort, TestSort19)
 {
 	
-	int a[] = {NULL,NULL};
-	//int b[] ={1,2,3,4,5,6,7,8,INT_MAX};
-	int length = sizeof(a) / sizeof(int);
-	char complex[]="On";
-	
-  TEST_ASSERT_EQUAL(0, sort(a, length, complex, RADIX));
- // TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
+
 	
 }
 TEST(Radix_sort, TestSort20){}
