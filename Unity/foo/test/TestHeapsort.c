@@ -145,13 +145,13 @@ TEST(Heap_sort, TestSort9)//TESTE ARRAY UNDERFLOW
 }
 TEST(Heap_sort, TestSort10)//TESTE ARRAY ZERADO
 {
-	/*
+	
 
 	int a[] = {};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="Onlogn";
 	 TEST_ASSERT_EQUAL(1, sort(a, length, complex, HEAP));
-	*/
+	
 }
 
 
