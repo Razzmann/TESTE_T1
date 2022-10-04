@@ -148,24 +148,25 @@ TEST(Radix_sort, TestSort10)//TESTE ARRAY ZERADO
 {
 
 
-	int a[] = {};
-	int length = sizeof(a) / sizeof(int);
-	char complex[]="On";
-	 TEST_ASSERT_EQUAL(1, sort(a, length, complex, RADIX));
+	//int a[] = {};
+	//int length = sizeof(a) / sizeof(int);
+	//char complex[]="On";
+	//TEST_ASSERT_EQUAL(1, sort(a, length, complex, RADIX));
 
 }
 
 
 
-TEST(Radix_sort, TestSort11)//TESTE ARRAY PASSANDO METADE 11
+TEST(Radix_sort, TestSort11)//TESTE ARRAY PASSANDO METADE 10
 {
-	/*
 	
-	int a[] = {123,0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
-	int length = sizeof(a) / sizeof(int);
+	
+	int a[] = {0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
+	int b[] = {-1246423, -128743, -19,0,134,1324,7463,7542,12512,67213};
 	char complex[]="On";
-	TEST_ASSERT_EQUAL(0, sort(a, length, complex, RADIX));
-	*/
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
+
 }
 TEST(Radix_sort, TestSort12)//TESTE ARRAY PASSANDO MÁXIMO
 {
