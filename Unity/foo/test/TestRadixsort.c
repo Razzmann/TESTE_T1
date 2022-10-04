@@ -163,32 +163,38 @@ TEST(Radix_sort, TestSort11)//TESTE ARRAY PASSANDO METADE 10
 	
 	int a[] = {0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
 	int b[] = {-1246423, -128743, -19,0,134,1324,7463,7542,12512,67213};
+	int length = sizeof(a) / sizeof(int);
 	char complex[]="On";
-  TEST_ASSERT_EQUAL(0, sort(a, length, complex, SELECTION));
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, RADIX));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 }
-TEST(Radix_sort, TestSort12)//TESTE ARRAY PASSANDO MÁXIMO
+TEST(Radix_sort, TestSort12)//TESTE ARRAY PASSANDO MÁXIMO e já ordenados
 {
 	
 	int a[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+	int b[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="On";
 	
 	
  TEST_ASSERT_EQUAL(0, sort(a, length, complex, RADIX));
+ TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 	
 }
 
 TEST(Radix_sort, TestSort13)//TESTE PASSANDO MÍNIMO
 {
 	
-	int a[] = {1,2};
+	int a[] = {2,1};
+	int b[] = {1,2};
 	int length = sizeof(a) / sizeof(int);
 	
 	char complex[]="On";
 		
- TEST_ASSERT_EQUAL(0, sort(a, length, complex, RADIX));
+ 	
+  TEST_ASSERT_EQUAL(0, sort(a, length, complex, RADIX));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 }
 
