@@ -1,0 +1,65 @@
+        -:    0:Source:src/merge_sort.c
+        -:    0:Graph:merge_sort.gcno
+        -:    0:Data:merge_sort.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://Implementation of Merge Sort in C
+        -:    2:#include <stdio.h>
+        -:    3:#include <stdlib.h>
+        -:    4:typedef int TYPE;
+        -:    5:void merge(TYPE [], int, int, int);
+        -:    6:void merge_sort(TYPE [], int, int);
+        -:    7:
+function merge called 101 returned 100% blocks executed 100%
+      101:    8:void merge(TYPE A[], int p, int q, int r) {
+        -:    9:	int i, j, k;
+      101:   10:	int nL = q - p + 1; 
+      101:   11:	int nR = r - q;
+        -:   12:
+      101:   13:	TYPE *L = malloc(sizeof(TYPE)*nL);
+      101:   14:	TYPE *R = malloc(sizeof(TYPE)*nR);
+        -:   15:	
+      319:   16:	for (i = 0; i < nL; i++)	
+branch  0 taken 68%
+branch  1 taken 32%
+      218:   17:		L[i] = A[p + i];
+        -:   18:	
+      290:   19:	for (j = 0; j < nR; j++)	
+branch  0 taken 65%
+branch  1 taken 35%
+      189:   20:		R[j] = A[q + 1 + j];
+        -:   21:	
+      101:   22:	i = j = 0;
+      101:   23:	k = p;
+        -:   24:	
+      310:   25:	while (i < nL && j < nR) 
+branch  0 taken 20%
+branch  1 taken 80%
+branch  2 taken 67%
+branch  3 taken 33%
+      209:   26:		if (L[i] <= R[j])  A[k++] = L[i++];
+branch  0 taken 69%
+branch  1 taken 31%
+       65:   27:		else  A[k++] = R[j++];
+        -:   28:	
+      175:   29:	while (i < nL)	A[k++] = L[i++];
+branch  0 taken 42%
+branch  1 taken 58%
+      225:   30:	while (j < nR)	A[k++] = R[j++];
+branch  0 taken 55%
+branch  1 taken 45%
+        -:   31:		
+      101:   32:	free(L);
+      101:   33:	free(R);
+      101:   34:}
+function merge_sort called 212 returned 100% blocks executed 100%
+      212:   35:void merge_sort(TYPE A[], int p, int r) {
+      212:   36:	if(p < r) {
+branch  0 taken 52%
+branch  1 taken 48%
+      101:   37:		int q = (p + r) / 2;
+      101:   38:		merge_sort(A, p, q);
+      101:   39:		merge_sort(A, q + 1, r);
+      101:   40:		merge(A, p, q, r);
+      101:   41:	}
+      212:   42:}

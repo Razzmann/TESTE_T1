@@ -1,0 +1,60 @@
+        -:    0:Source:src/counting_sort.c
+        -:    0:Graph:counting_sort.gcno
+        -:    0:Data:counting_sort.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*Implementation of Counting sort in C. This implementation works only 
+        -:    2:	with integers.*/
+        -:    3:#include <stdio.h>
+        -:    4:#include <stdlib.h>
+        -:    5:void counting_sort(int [], int);
+        -:    6:int find_max(int [], int);
+        -:    7:
+function counting_sort called 6 returned 100% blocks executed 100%
+        6:    8:void counting_sort(int a[], int length){
+        -:    9:	/*for a[] = {0, 3, 2, 3, 3, 0, 5, 2, 3} range will be	0, ... , 5. 
+        -:   10:		So we will need 6 spots in our new sub-array which is max + 1*/
+        6:   11:	int i, max = find_max(a, length);
+        6:   12:	int c[max+1];
+        -:   13:	
+    92525:   14:	for(i = 0; i < max + 1; c[i++] = 0); // first c[i] = 0 will be done, then i++;
+branch  0 taken 99%
+branch  1 taken 1%
+        -:   15:	
+       83:   16:	for(i = 0; i < length; i++) c[a[i]]++;
+branch  0 taken 93%
+branch  1 taken 7%
+        -:   17:	
+    92519:   18:	for(i = 1; i < max + 1; i++) c[i] = c[i - 1] + c[i];
+branch  0 taken 99%
+branch  1 taken 1%
+        -:   19:	
+        -:   20:	
+        6:   21:	int b[length]; //this is gonna be our new sorted array
+        6:   22:	int j = length - 1;
+       83:   23:	for(i = 0; i < length; i++) {
+branch  0 taken 93%
+branch  1 taken 7%
+       77:   24:		b[--c[a[j]]] = a[j];
+       77:   25:		j--;
+       77:   26:	}	
+        -:   27:	
+        -:   28:	/*Right now B represents sorted array of A. But i want to change A (original) 
+        -:   29:		so i will overwrite B over A array.*/
+       83:   30:	for(i = 0; i < length; i++)	a[i] = b[i];
+branch  0 taken 93%
+branch  1 taken 7%
+        -:   31:
+        6:   32:}
+function find_max called 6 returned 100% blocks executed 100%
+        6:   33:int find_max(int a[], int length){
+        6:   34:	int i, max = a[0];
+       77:   35:	for(i = 1; i < length; i++) {
+branch  0 taken 92%
+branch  1 taken 8%
+       71:   36:		if(max < a[i]) max = a[i];
+branch  0 taken 41%
+branch  1 taken 59%
+       71:   37:	}
+        6:   38:	return max;
+        -:   39:}
