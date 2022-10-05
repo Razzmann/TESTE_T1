@@ -240,7 +240,7 @@ TEST(Selection_sort, TestSort20){  //teste enviando length menor do que o tamanh
 	char complex[]="On2";
 	
   TEST_ASSERT_EQUAL(0, sort(a, length-5, complex, SELECTION));
-  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 }
 
