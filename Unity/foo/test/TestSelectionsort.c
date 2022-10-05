@@ -240,9 +240,14 @@ TEST(Selection_sort, TestSort20){  //teste enviando length menor do que o tamanh
 	char complex[]="On2";
 	
   TEST_ASSERT_EQUAL(0, sort(a, length-5, complex, SELECTION));
-  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
+  TEST_ASSERT_EQUAL(1,TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length));
 
 }
 
-
-
+TEST(Selection_sort, TestSort21)
+{
+	int a[] = {0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
+	int length = sizeof(a) / sizeof(int);
+	TEST_ASSERT_EQUAL(1, sort(a, length, complex, 8));
+	TEST_ASSERT_EQUAL(1, sort(a, length, complex, -1));
+}
