@@ -222,14 +222,24 @@ TEST(Selection_sort, TestSort18)
 }
 TEST(Selection_sort, TestSort19){
 	
-	int a[] = {-176234,561,1112,-5671,85124,5819};
+	int a[] = {0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
+	int b[] = {-1246423, -128743, -19,0,134,1324,7463,7542,12512,67213};
 	int length = sizeof(a) / sizeof(int);
-	char complex[]="on2";
-TEST_ASSERT_EQUAL(1, sort(a, length, complex, SELECTION));
+	char complex[]="On2";
+	
+  TEST_ASSERT_EQUAL(0, sort(a, length+10, complex, SELECTION));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);	
+
 
 }
 TEST(Selection_sort, TestSort20){  //teste para cobertura do codigo
-
+	int a[] = {0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
+	int b[] = {-1246423, -128743, -19,0,134,1324,7463,7542,12512,67213};
+	int length = sizeof(a) / sizeof(int);
+	char complex[]="On2";
+	
+  TEST_ASSERT_EQUAL(0, sort(a, length-5, complex, SELECTION));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 }
 
