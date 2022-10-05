@@ -23,6 +23,7 @@ TEST_GROUP_RUNNER(Selection_sort)
   RUN_TEST_CASE(Selection_sort, TestSort18);
   RUN_TEST_CASE(Selection_sort, TestSort19);
   RUN_TEST_CASE(Selection_sort, TestSort20);
+  RUN_TEST_CASE(Selection_sort, TestSort21);
 }
 
 
