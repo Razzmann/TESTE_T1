@@ -220,6 +220,16 @@ TEST(Bubble_sort, TestSort19)
 }
 TEST(Bubble_sort, TestSort20){}
 
+TEST(Bubble_sort, TestSort21)
+{
+	int a[] = {0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
+	int length = sizeof(a) / sizeof(int);
+	char complex[]="On2";
+	TEST_ASSERT_EQUAL(1, sort(a, length, complex, 8));
+	TEST_ASSERT_EQUAL(1, sort(a, length, complex, -1));
+	
+}
+
 
 
 
