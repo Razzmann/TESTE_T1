@@ -232,10 +232,8 @@ TEST(Quick_sort, TestSort20){  //teste enviando length menor do que o tamanho do
 	int length = sizeof(a) / sizeof(int);
 	char complex[]="Onlogn";
 	
-  TEST_ASSERT_EQUAL(0, sort(a, length-5, complex, RADIX));
-  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, QUICK);
-
-}
+  TEST_ASSERT_EQUAL(0, sort(a, length-5, complex, QUICK));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 
 TEST(Quick_sort, TestSort21)
