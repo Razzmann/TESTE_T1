@@ -211,7 +211,7 @@ TEST(Insertion_sort, TestSort18)
 	
  TEST_ASSERT_EQUAL(1, sort(a, length, complex, INSERTION));
 }
-TEST(Quick_sort, TestSort19){//teste enviando length maior do que o tamanho do vetor
+TEST(Insertion_sort, TestSort19){//teste enviando length maior do que o tamanho do vetor
 	
 	/*
 	int a[] = {0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
@@ -224,7 +224,7 @@ TEST(Quick_sort, TestSort19){//teste enviando length maior do que o tamanho do v
 */
 
 }
-TEST(Quick_sort, TestSort20){  //teste enviando length menor do que o tamanho do vetor
+TEST(Insertion_sort, TestSort20){  //teste enviando length menor do que o tamanho do vetor
 
 	int a[] = {9,8,7,6,5,4,3,2,1,0};
 	int b[] = {5,6,7,8,9,4,3,2,1,0};
