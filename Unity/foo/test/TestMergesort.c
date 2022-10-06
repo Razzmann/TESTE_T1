@@ -213,7 +213,6 @@ TEST(Merge_sort, TestSort18)//TESTE CASE SENSITIVE
  TEST_ASSERT_EQUAL(1, sort(a, length, complex, MERGE));
 }
 
-
 TEST(Merge_sort, TestSort19){//teste enviando length maior do que o tamanho do vetor
 	
 	/*
@@ -235,10 +234,8 @@ TEST(Merge_sort, TestSort20){  //teste enviando length menor do que o tamanho do
 	char complex[]="Onlogn";
 	
   TEST_ASSERT_EQUAL(0, sort(a, length-5, complex, MERGE));
-  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, MERGE);
-
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 }
-
 
 TEST(Merge_sort, TestSort21)
 {
