@@ -277,7 +277,7 @@ TEST(Heap_sort, TestSort20){  //teste enviando length menor do que o tamanho do 
 	
   TEST_ASSERT_EQUAL(0, sort(a, length-5, complex, HEAP));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
-
+}
 TEST(Heap_sort, TestSort21)
 {
 	int a[] = {0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
