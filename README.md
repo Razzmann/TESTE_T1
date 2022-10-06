@@ -1,27 +1,11 @@
-Travis Identifier [![License][license-img]][license-url]
-=
-Simple Travis example for C using GCC compiler based on the identifier program presented by Delamaro et al. "Introdução ao Teste de Software". Elsevier. 2007.
 
-Test results:
+# TRABALHO PRÁTICO 1 – Teste de Software em algoritmos de ordenação:
 
-![status](https://github.com/rafaelgaribotti/travis-identifier/actions/workflows/main.yml/badge.svg)
+#### Pontifícia Universidade Católica do Rio Grande do Sul
+#### Escola Politécnica
+#### Teste e Confiabilidade de Sistemas 
 
-Important files:
-* [identifier.c](identifier.c)
-* [Makefile](Makefile)
+###### LUCAS HOFFMEISTER HASSMANN
 
+###### RODRIGO JOSÉ CURZEL ZAPAROLI
 
-Author
-------
-[**Rafael Garibotti**](https://br.linkedin.com/in/rafaelgaribotti)
-
-
-License
--------
-MIT License. See [LICENSE](LICENSE) for details.
-
-[main-url]: https://github.com/rafaelgaribotti/travis-identifier
-[readme-url]: https://github.com/rafaelgaribotti/travis-identifier/blob/main/README.md
-[license-url]: https://github.com/rafaelgaribotti/travis-identifier/blob/main/LICENSE
-[license-img]: https://img.shields.io/github/license/rsp/travis-hello-modern-cpp.svg
-[github-follow-url]: https://github.com/rafaelgaribotti
