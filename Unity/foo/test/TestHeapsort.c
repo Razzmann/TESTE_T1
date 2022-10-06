@@ -255,11 +255,28 @@ TEST(Heap_sort, TestSort18)//TESTE CASE SENSITIVE
 }
 
 
-TEST(Heap_sort, TestSort19)
-{
+TEST(Heap_sort, TestSort19){//teste enviando length maior do que o tamanho do vetor
 	
+	/*
+	int a[] = {0,12512,67213,-128743,7463,1324,7542,134,-1246423,-19};
+	int b[] = {-1246423, -128743, -19,0,134,1324,7463,7542,12512,67213};
+	int length = sizeof(a) / sizeof(int);
+	char complex[]="Onlogn";
+	
+  TEST_ASSERT_EQUAL(1, sort(a, length+10, complex, HEAP));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);	
+*/
+
 }
-TEST(Heap_sort, TestSort20){}
+TEST(Heap_sort, TestSort20){  //teste enviando length menor do que o tamanho do vetor
+
+	int a[] = {9,8,7,6,5,4,3,2,1,0};
+	int b[] = {5,6,7,8,9,4,3,2,1,0};
+	int length = sizeof(a) / sizeof(int);
+	char complex[]="Onlogn";
+	
+  TEST_ASSERT_EQUAL(0, sort(a, length-5, complex, HEAP));
+  TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
 
 TEST(Heap_sort, TestSort21)
 {
