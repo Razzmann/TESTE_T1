@@ -212,6 +212,7 @@ TEST(Quick_sort, TestSort18)
 	
  TEST_ASSERT_EQUAL(1, sort(a, length, complex, QUICK));
 }
+
 TEST(Quick_sort, TestSort19){//teste enviando length maior do que o tamanho do vetor
 	
 	/*
@@ -225,8 +226,9 @@ TEST(Quick_sort, TestSort19){//teste enviando length maior do que o tamanho do v
 */
 
 }
-TEST(Quick_sort, TestSort20){  //teste enviando length menor do que o tamanho do vetor
 
+TEST(Quick_sort, TestSort20){  //teste enviando length menor do que o tamanho do vetor
+/*
 	int a[] = {9,8,7,6,5,4,3,2,1,0};
 	int b[] = {5,6,7,8,9,4,3,2,1,0};
 	int length = sizeof(a) / sizeof(int);
@@ -234,6 +236,7 @@ TEST(Quick_sort, TestSort20){  //teste enviando length menor do que o tamanho do
 	
   TEST_ASSERT_EQUAL(0, sort(a, length-5, complex, QUICK));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
+  */
 }
 
 TEST(Quick_sort, TestSort21)
