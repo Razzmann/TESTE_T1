@@ -49,6 +49,7 @@ TEST_GROUP_RUNNER(Bubble_sort)
   RUN_TEST_CASE(Bubble_sort, TestSort18);
   RUN_TEST_CASE(Bubble_sort, TestSort19);
   RUN_TEST_CASE(Bubble_sort, TestSort20);
+  RUN_TEST_CASE(Bubble_sort, TestSort21);
 }
 
 
@@ -74,6 +75,7 @@ TEST_GROUP_RUNNER(Insertion_sort)
   RUN_TEST_CASE(Insertion_sort, TestSort18);
   RUN_TEST_CASE(Insertion_sort, TestSort19);
   RUN_TEST_CASE(Insertion_sort, TestSort20);
+  RUN_TEST_CASE(Insertion_sort, TestSort21);
 }
 
 TEST_GROUP_RUNNER(Counting_sort)
@@ -98,6 +100,7 @@ TEST_GROUP_RUNNER(Counting_sort)
   RUN_TEST_CASE(Counting_sort, TestSort18);
   RUN_TEST_CASE(Counting_sort, TestSort19);
   RUN_TEST_CASE(Counting_sort, TestSort20);
+  RUN_TEST_CASE(Counting_sort, TestSort21);
 }
 
 
@@ -123,6 +126,7 @@ TEST_GROUP_RUNNER(Radix_sort)
   RUN_TEST_CASE(Radix_sort, TestSort18);
   RUN_TEST_CASE(Radix_sort, TestSort19);
   RUN_TEST_CASE(Radix_sort, TestSort20);
+  RUN_TEST_CASE(Radix_sort, TestSort21);
 }
 
 TEST_GROUP_RUNNER(Merge_sort)
@@ -147,6 +151,7 @@ TEST_GROUP_RUNNER(Merge_sort)
   RUN_TEST_CASE(Merge_sort, TestSort18);
   RUN_TEST_CASE(Merge_sort, TestSort19);
   RUN_TEST_CASE(Merge_sort, TestSort20);
+  RUN_TEST_CASE(Merge_sort, TestSort21);
 }
 
 
@@ -172,6 +177,7 @@ TEST_GROUP_RUNNER(Heap_sort)
   RUN_TEST_CASE(Heap_sort, TestSort18);
   RUN_TEST_CASE(Heap_sort, TestSort19);
   RUN_TEST_CASE(Heap_sort, TestSort20);
+  RUN_TEST_CASE(Heap_sort, TestSort21);
 }
 
 TEST_GROUP_RUNNER(Quick_sort)
@@ -196,5 +202,6 @@ TEST_GROUP_RUNNER(Quick_sort)
   RUN_TEST_CASE(Quick_sort, TestSort18);
   RUN_TEST_CASE(Quick_sort, TestSort19);
   RUN_TEST_CASE(Quick_sort, TestSort20);
+  RUN_TEST_CASE(Quick_sort, TestSort21);
 }
 
