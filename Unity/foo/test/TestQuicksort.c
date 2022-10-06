@@ -234,7 +234,7 @@ TEST(Quick_sort, TestSort20){  //teste enviando length menor do que o tamanho do
 	
   TEST_ASSERT_EQUAL(0, sort(a, length-5, complex, QUICK));
   TEST_ASSERT_EQUAL_INT_ARRAY(b, a, length);
-
+}
 
 TEST(Quick_sort, TestSort21)
 {
