@@ -4,7 +4,7 @@ int sort(int* a, int length, char* type, int algorithm) {
     int status = 0;
     int *s = (int*)malloc(sizeof(int)*length);
     memcpy(s,a,sizeof(int)*(length));
-    if (length < 2 || length > 20) {//TESTE 2 e 3 <= >=
+    if (length < 2 || length > 20) {
         status = 1;
     }
     else {
@@ -28,7 +28,7 @@ int sort(int* a, int length, char* type, int algorithm) {
                     status = 1;
                 break;
             case INSERTION:
-                if (!strcmp(type,"On"))//On2
+                if (!strcmp(type,"On2"))
                     insertion_sort(s, length);
                 else
                     status = 1;
@@ -40,7 +40,7 @@ int sort(int* a, int length, char* type, int algorithm) {
                     status = 1;
                 break;
             case HEAP:
-                if (!strcmp(type,"Onlogn"))
+                if (!strcmp(type,"On2"))//Onlogn
                     heap_sort(s, length);
                 else
                     status = 1;
