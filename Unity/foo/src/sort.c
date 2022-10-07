@@ -13,7 +13,7 @@ int sort(int* a, int length, char* type, int algorithm) {
                 if (!strcmp(type,"On"))
                     counting_sort(s, length);
                 else
-                    status = 1; //TESTE 1 --------  status = 0;
+                    status = 1; 
                 break;
             case RADIX:
                 if (!strcmp(type,"On"))
@@ -28,13 +28,13 @@ int sort(int* a, int length, char* type, int algorithm) {
                     status = 1;
                 break;
             case INSERTION:
-                if (!strcmp(type,"On2"))
+                if (!strcmp(type,"On"))//On2
                     insertion_sort(s, length);
                 else
                     status = 1;
                 break;
             case SELECTION:
-                if (!strcmp(type,"On"))//On2
+                if (!strcmp(type,"On2"))
                     selection_sort(s, length);
                 else
                     status = 1;
